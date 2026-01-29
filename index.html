@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LASIDO — Learn to Read Music</title>
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+            background: #fff;
+            color: #111;
+            min-height: 100vh;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a { color: #111; }
+        a:hover { opacity: 0.6; }
+
+        header {
+            max-width: 640px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem 0;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        header a {
+            font-size: 0.85rem;
+            text-decoration: none;
+            color: #666;
+        }
+
+        .hero {
+            max-width: 640px;
+            margin: 0 auto;
+            padding: 8vh 1.5rem 5vh;
+            text-align: center;
+        }
+
+        .hero img {
+            width: 100px;
+            height: 100px;
+            border-radius: 22px;
+            margin-bottom: 2rem;
+        }
+
+        .hero h1 {
+            font-size: 2rem;
+            font-weight: 600;
+            letter-spacing: -0.03em;
+            margin-bottom: 0.75rem;
+        }
+
+        .tagline {
+            font-size: 1.05rem;
+            font-weight: 400;
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+
+        .app-store-badge { display: inline-block; }
+        .app-store-badge img { height: 44px; width: auto; border-radius: 0; }
+
+        .divider {
+            max-width: 640px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        .divider hr {
+            border: none;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        .features {
+            max-width: 640px;
+            margin: 0 auto;
+            padding: 4vh 1.5rem;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        .feature h3 {
+            font-size: 0.95rem;
+            font-weight: 600;
+            margin-bottom: 0.35rem;
+        }
+
+        .feature p {
+            font-size: 0.9rem;
+            font-weight: 400;
+            line-height: 1.55;
+            color: #555;
+        }
+
+        .clefs {
+            max-width: 640px;
+            margin: 0 auto;
+            padding: 2vh 1.5rem 6vh;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #888;
+        }
+
+        footer {
+            max-width: 640px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid #e0e0e0;
+            font-size: 0.8rem;
+            color: #888;
+        }
+
+        footer a { color: #888; text-decoration: none; }
+
+        @media (max-width: 500px) {
+            .features-grid { grid-template-columns: 1fr; }
+            footer { flex-direction: column; gap: 0.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="privacy_policy.html">Privacy</a>
+    </header>
+
+    <section class="hero">
+        <img src="logo.jpg" alt="LASIDO">
+        <h1>Learn to read music</h1>
+        <p class="tagline">LASIDO teaches you to read sheet music through play — note by note, at your own pace.</p>
+        <a class="app-store-badge" href="https://apps.apple.com/us/app/lasido-learn-to-read-music/id1250261050" target="_blank" rel="noopener">
+            <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </a>
+    </section>
+
+    <div class="divider"><hr></div>
+
+    <section class="features">
+        <div class="features-grid">
+            <div class="feature">
+                <h3>Practice mode</h3>
+                <p>Read notes at your own rhythm, one by one, without pressure.</p>
+            </div>
+            <div class="feature">
+                <h3>Timed challenges</h3>
+                <p>Race against 30 seconds and beat your high score.</p>
+            </div>
+            <div class="feature">
+                <h3>Hear every note</h3>
+                <p>Tap a note to hear it played back instantly.</p>
+            </div>
+            <div class="feature">
+                <h3>Smart repetition</h3>
+                <p>A spaced-repetition algorithm focuses on the notes you find hardest.</p>
+            </div>
+        </div>
+    </section>
+
+    <p class="clefs">Treble &middot; Bass &middot; Alto &middot; Tenor</p>
+
+    <footer>
+        <span>&copy; Cyril Chandelier</span>
+        <a href="privacy_policy.html">Privacy Policy</a>
+    </footer>
+</body>
+</html>
